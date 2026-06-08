@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#09090b" />
+  <title>Foued Bouallegui — Full-Stack Developer</title>
+  <meta name="description" content="Foued Bouallegui — Full-Stack JavaScript Developer building secure, scalable web platforms with React, Angular, Node.js, Express, and SQL/NoSQL databases." />
+  <meta name="author" content="Foued Bouallegui" />
+  <link rel="canonical" href="https://fouedbouallegui.github.io/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Foued Bouallegui — Full-Stack Developer" />
+  <meta property="og:description" content="Full-Stack JavaScript Developer specializing in robust architecture and high-performance web platforms." />
+  <meta property="og:image" content="assets/images/project-zeroleaks.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/themes.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Foued Bouallegui",
+    "jobTitle": "Full-Stack JavaScript Developer",
+    "url": "https://fouedbouallegui.github.io/",
+    "email": "blfoued61@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Sousse", "addressCountry": "Tunisia" },
+    "knowsAbout": ["React", "Angular", "Node.js", "Express.js", "TypeScript", "MongoDB", "PostgreSQL"],
+    "sameAs": ["https://github.com/FouedBouallegui", "https://www.linkedin.com/in/foued-bl"]
+  }
+  </script>
+
+  <!-- Theme bootstrap: prevents flash of wrong theme -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        var theme = saved || (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link" data-i18n="a11y.skip">Skip to content</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand" aria-label="Foued Bouallegui — home">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span class="mono">Foued Bouallegui</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#certifications" data-i18n="nav.certs">Certifications</a>
+        <a href="#timeline" data-i18n="nav.timeline">Experience</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-switch" role="group" aria-label="Language switcher">
+          <button type="button" data-lang="en" class="lang-btn" aria-pressed="true">EN</button>
+          <span class="lang-sep" aria-hidden="true">/</span>
+          <button type="button" data-lang="fr" class="lang-btn" aria-pressed="false">FR</button>
+        </div>
+        <button type="button" id="theme-toggle" class="icon-btn" aria-label="Toggle color theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button type="button" id="menu-toggle" class="icon-btn menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
+      <a href="#projects" data-i18n="nav.projects">Projects</a>
+      <a href="#skills" data-i18n="nav.skills">Skills</a>
+      <a href="#certifications" data-i18n="nav.certs">Certifications</a>
+      <a href="#timeline" data-i18n="nav.timeline">Experience</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-content reveal">
+          <div class="hero-badges">
+            <span class="pill pill-accent mono" data-i18n="hero.badge">Available for opportunities</span>
+            <span class="mono pill-muted" data-i18n="hero.location">Sousse, Tunisia / Remote</span>
+          </div>
+          <h1 class="hero-title">Foued Bouallegui</h1>
+          <p class="hero-role mono" data-i18n="hero.role">Full-Stack JavaScript Developer</p>
+          <p class="hero-lead" data-i18n="hero.lead">
+            I build, deploy, and maintain production-grade web platforms — specializing in robust
+            architecture, secure authentication, and high-performance React &amp; Node.js systems.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary" data-i18n="hero.ctaProjects">View Projects</a>
+            <a href="#contact" class="btn btn-ghost"><span class="mono cta-num">01</span> <span data-i18n="hero.ctaContact">Get in touch</span></a>
+          </div>
+          <dl class="hero-stats">
+            <div><dt class="mono" data-i18n="hero.stat1Label">Experience</dt><dd data-i18n="hero.stat1">2+ years</dd></div>
+            <div><dt class="mono" data-i18n="hero.stat2Label">Projects</dt><dd data-i18n="hero.stat2">6+ shipped</dd></div>
+            <div><dt class="mono" data-i18n="hero.stat3Label">Stack</dt><dd>JavaScript / TypeScript</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="mono section-kicker" data-i18n="about.kicker">01 — About</span>
+          <h2 class="section-title" data-i18n="about.title">Engineering with intent</h2>
+        </div>
+        <div class="about-grid">
+          <p class="about-text reveal" data-i18n="about.p1">
+            I'm a Full-Stack Developer with hands-on industry experience building end-to-end web
+            applications. After completing an intensive Full Stack JavaScript program at ReBootKamp (RBK),
+            I've delivered production platforms spanning secure data systems, e-commerce, and healthcare.
+          </p>
+          <p class="about-text reveal" data-i18n="about.p2">
+            I care about clean architecture, performance, and security. I work comfortably across the
+            stack — from responsive interfaces in React and Angular to scalable Node.js / Express APIs and
+            relational or document databases — while pursuing my Business Intelligence degree at ISG Sousse.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="mono section-kicker" data-i18n="projects.kicker">02 — Selected Work</span>
+          <h2 class="section-title" data-i18n="projects.title">Case studies</h2>
+          <p class="section-sub" data-i18n="projects.sub">A selection of production platforms and engineering builds.</p>
+        </div>
+
+        <div class="projects-list">
+          <!-- ZeroLeaks -->
+          <article class="case reveal">
+            <div class="case-media">
+              <img src="assets/images/project-zeroleaks.jpg" alt="ZeroLeaks secure data management dashboard" loading="lazy" width="1200" height="700" />
+            </div>
+            <div class="case-body">
+              <div class="case-tags">
+                <span class="tag tag-accent">Security</span>
+                <span class="tag">Angular</span>
+                <span class="tag">Node.js</span>
+              </div>
+              <h3 class="case-title">ZeroLeaks — <span data-i18n="projects.p1.subtitle">Secure Data Platform</span></h3>
+              <p class="case-desc" data-i18n="projects.p1.desc">
+                A zero-knowledge, end-to-end encrypted records and document management system. Hybrid
+                RSA-2048 / AES-256 client-side encryption ensures the server never accesses unencrypted
+                data, with a dynamic form engine and blockchain-based audit trails.
+              </p>
+              <ul class="case-points">
+                <li data-i18n="projects.p1.f1">Client-side hybrid encryption (RSA-2048 + AES-256)</li>
+                <li data-i18n="projects.p1.f2">Dynamic form engine &amp; document workflows</li>
+                <li data-i18n="projects.p1.f3">Blockchain-based tamper-proof audit trails</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Essid Pieces Auto -->
+          <article class="case case-reverse reveal">
+            <div class="case-media case-media-portrait">
+              <img src="assets/images/project-essid.jpg" alt="Essid Pieces Auto e-commerce mobile interface" loading="lazy" width="512" height="768" />
+            </div>
+            <div class="case-body">
+              <div class="case-tags">
+                <span class="tag tag-accent">E-Commerce</span>
+                <span class="tag">Angular</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Express</span>
+                <span class="tag">SQL</span>
+              </div>
+              <h3 class="case-title">Essid Pieces Auto</h3>
+              <p class="case-desc" data-i18n="projects.p2.desc">
+                A full-stack B2B/B2C e-commerce platform for automotive spare parts. Built responsive
+                front-end and back-end services, product catalog and inventory management, secure
+                authentication, transactional emails, API integrations, and performance optimization.
+              </p>
+              <ul class="case-points">
+                <li data-i18n="projects.p2.f1">Product catalog &amp; real-time inventory management</li>
+                <li data-i18n="projects.p2.f2">Secure auth &amp; transactional email flows</li>
+                <li data-i18n="projects.p2.f3">Performance &amp; scalability optimization</li>
+              </ul>
+              <a class="case-link mono" href="https://www.essidpiecesauto.com/" target="_blank" rel="noreferrer">essidpiecesauto.com →</a>
+            </div>
+          </article>
+
+          <!-- Smaller projects grid -->
+          <div class="case-grid">
+            <article class="mini-case reveal">
+              <span class="mono mini-tag">Inventory</span>
+              <h4>Sanimed — QR Scan Module</h4>
+              <p data-i18n="projects.p3.desc">Backend QR-code scanning module for a leading ceramic sanitary-ware manufacturer, enabling real-time product tracking and inventory control.</p>
+              <div class="case-tags"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">SQL</span></div>
+            </article>
+            <article class="mini-case reveal">
+              <span class="mono mini-tag">HealthTech</span>
+              <h4>HealthCare Platform</h4>
+              <p data-i18n="projects.p4.desc">Doctor appointment booking with dynamic specialty search and a secure Flouci payment gateway for online medical consultations.</p>
+              <div class="case-tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Flouci</span></div>
+            </article>
+            <article class="mini-case reveal">
+              <span class="mono mini-tag">Mobile</span>
+              <h4>Hotel Booking App</h4>
+              <p data-i18n="projects.p5.desc">Cross-platform booking app with owner verification, room management, reviews, and a real-time group chat system.</p>
+              <div class="case-tags"><span class="tag">React Native</span><span class="tag">Node.js</span></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="mono section-kicker" data-i18n="skills.kicker">03 — Stack</span>
+          <h2 class="section-title" data-i18n="skills.title">Tools &amp; technologies</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <h3 class="mono skill-head" data-i18n="skills.frontend">Front-End</h3>
+            <ul class="skill-list">
+              <li><span>React &amp; Redux Toolkit</span><em class="mono">Expert</em></li>
+              <li><span>Angular</span><em class="mono">Advanced</em></li>
+              <li><span>Tailwind CSS / Bootstrap</span><em class="mono">Expert</em></li>
+              <li><span>React Native</span><em class="mono">Advanced</em></li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3 class="mono skill-head" data-i18n="skills.backend">Back-End</h3>
+            <ul class="skill-list">
+              <li><span>Node.js &amp; Express.js</span><em class="mono">Core</em></li>
+              <li><span>MySQL / PostgreSQL</span><em class="mono">Core</em></li>
+              <li><span>MongoDB / Mongoose</span><em class="mono">Core</em></li>
+              <li><span>Prisma / Sequelize</span><em class="mono">Core</em></li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3 class="mono skill-head" data-i18n="skills.tools">Tooling &amp; Practices</h3>
+            <ul class="skill-list">
+              <li><span>Git / GitHub</span><em class="mono">Core</em></li>
+              <li><span>REST APIs / JWT Auth</span><em class="mono">Core</em></li>
+              <li><span>Agile / Scrum</span><em class="mono">Core</em></li>
+              <li><span>TypeScript</span><em class="mono">Advanced</em></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="mono section-kicker" data-i18n="certs.kicker">04 — Credentials</span>
+          <h2 class="section-title" data-i18n="certs.title">Certifications</h2>
+          <p class="section-sub" data-i18n="certs.sub">Verified training and professional credentials.</p>
+        </div>
+        <div class="certs-grid">
+          <article class="cert-card reveal">
+            <button type="button" class="cert-thumb" data-cert="assets/certificates/rbk-fullstack.jpg" aria-label="Open RBK certificate preview">
+              <img src="assets/certificates/rbk-fullstack.jpg" alt="RBK Full Stack JavaScript Developer certificate of completion" loading="lazy" />
+              <span class="cert-zoom mono" data-i18n="certs.view">View →</span>
+            </button>
+            <div class="cert-info">
+              <h3 class="cert-name">Full Stack JavaScript Developer</h3>
+              <p class="cert-org">ReBootKamp (RBK) — <span data-i18n="certs.campus">Tunis Campus</span></p>
+              <dl class="cert-meta mono">
+                <div><dt data-i18n="certs.issued">Issued</dt><dd>01 / 06 / 2024</dd></div>
+                <div><dt data-i18n="certs.id">Credential ID</dt><dd class="cert-id">0423bfbb…12a22d</dd></div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TIMELINE ============ -->
+    <section class="section section-alt" id="timeline">
+      <div class="container timeline-wrap">
+        <div class="timeline-col reveal">
+          <h2 class="mono col-title" data-i18n="timeline.title">Experience</h2>
+          <ol class="timeline">
+            <li class="t-item t-active">
+              <span class="mono t-date">Nov 2024 — Jun 2026</span>
+              <h3 data-i18n="timeline.e1.role">Full-Stack Developer</h3>
+              <p data-i18n="timeline.e1.desc">Built and maintained production web applications end-to-end — responsive front-ends and scalable Node.js / Express REST APIs. Worked full-time while pursuing higher education.</p>
+            </li>
+            <li class="t-item">
+              <span class="mono t-date">Dec 2023 — Jun 2024</span>
+              <h3 data-i18n="timeline.e2.role">RBK — Full Stack JavaScript Developer</h3>
+              <p data-i18n="timeline.e2.desc">Intensive immersive bootcamp covering JavaScript, React, Angular, Node.js, Express, REST APIs, MongoDB, SQL, JWT auth, and Agile/Scrum team projects.</p>
+            </li>
+          </ol>
+        </div>
+        <div class="timeline-col reveal">
+          <h2 class="mono col-title" data-i18n="education.title">Education</h2>
+          <ol class="timeline">
+            <li class="t-item">
+              <span class="mono t-date">ISG Sousse · 2021–2023, 2025–2026</span>
+              <h3 data-i18n="education.e1.title">Business Intelligence (Final Year)</h3>
+              <p data-i18n="education.e1.desc">Resumed studies while working full-time; advanced to the final year.</p>
+            </li>
+            <li class="t-item">
+              <span class="mono t-date">2021</span>
+              <h3 data-i18n="education.e2.title">Baccalaureate in Business Intelligence</h3>
+            </li>
+          </ol>
+          <h2 class="mono col-title col-title-spaced" data-i18n="languages.title">Languages</h2>
+          <ul class="lang-list">
+            <li><span data-i18n="languages.ar">Arabic</span><em class="mono" data-i18n="languages.native">Native</em></li>
+            <li><span data-i18n="languages.en">English</span><em class="mono" data-i18n="languages.fluent">Fluent</em></li>
+            <li><span data-i18n="languages.fr">French</span><em class="mono" data-i18n="languages.inter">Intermediate</em></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <h2 class="contact-title" data-i18n="contact.title">Let's build something technically superior.</h2>
+          <p class="contact-sub" data-i18n="contact.sub">Open to full-stack roles, freelance projects, and collaborations.</p>
+          <div class="contact-actions">
+            <a href="mailto:blfoued61@gmail.com" class="btn btn-primary">blfoued61@gmail.com</a>
+            <div class="contact-links">
+              <a href="https://github.com/FouedBouallegui" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/in/foued-bl" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="tel:+21621923678">+216 21 923 678</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="mono">© <span id="year">2026</span> Foued Bouallegui</span>
+      <span class="mono" data-i18n="footer.built">Built with precision</span>
+    </div>
+  </footer>
+
+  <!-- ============ CERT MODAL ============ -->
+  <div class="modal" id="cert-modal" role="dialog" aria-modal="true" aria-label="Certificate preview" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-content">
+      <button type="button" class="modal-close icon-btn" data-close aria-label="Close preview">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <img id="modal-img" src="" alt="Certificate full preview" />
+    </div>
+  </div>
+
+  <script src="js/i18n.js" defer></script>
+  <script src="js/theme.js" defer></script>
+  <script src="js/language.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
