@@ -120,7 +120,7 @@ button { font-family: inherit; cursor: pointer; }
    ============================================================ */
 .hero {
   position: relative;
-  padding: 11rem 0 6rem;
+  padding: 11rem 0 2rem;
   overflow: hidden;
 }
 .hero-grid-bg {
@@ -324,4 +324,119 @@ button { font-family: inherit; cursor: pointer; }
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
   *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}
+
+/* ============================================================
+   SKILLS — LOGO WALL
+   ============================================================ */
+.skill-logos-title {
+  text-align: center;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--faint);
+  margin: 3.5rem 0 2rem;
+}
+.skill-marquee {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 10px 0 4px;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.skill-marquee-track {
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+  gap: 1.4rem;
+  animation: marquee-scroll 45s linear infinite;
+  padding: 6px 0;
+}
+.skill-marquee:hover .skill-marquee-track { animation-play-state: paused; }
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.skill-logo {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 140px;
+  padding: 1.6rem 0.75rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition), background var(--transition);
+}
+.skill-logo img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  transition: transform var(--transition), filter var(--transition);
+  filter: grayscale(0.25);
+}
+.skill-logo span {
+  font-size: 0.78rem;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.skill-logo:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent-border);
+  box-shadow: var(--shadow);
+  background: var(--surface-2);
+}
+.skill-logo:hover img { transform: scale(1.15) rotate(-4deg); filter: grayscale(0); }
+.skill-logo:hover span { color: var(--heading); }
+
+
+@keyframes pop-in {
+  from { opacity: 0; transform: translateY(16px) scale(0.92); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* Hero entrance + floating accent */
+.hero-content { animation: hero-in 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+@keyframes hero-in {
+  from { opacity: 0; transform: translateY(26px); }
+  to   { opacity: 1; transform: none; }
+}
+.hero-title {
+  background: linear-gradient(120deg, var(--heading) 30%, var(--accent) 120%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.btn-primary { position: relative; }
+.btn-primary::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 0 0 var(--accent-border);
+  animation: ring 2.6s ease-out infinite;
+}
+@keyframes ring {
+  0%   { box-shadow: 0 0 0 0 var(--accent-soft); }
+  70%  { box-shadow: 0 0 0 14px transparent; }
+  100% { box-shadow: 0 0 0 0 transparent; }
+}
+
+/* Reveal grids stagger for skill/mini cards */
+.skills-grid.in-view .skill-card,
+.case-grid.in-view .mini-case { animation: pop-in 0.55s cubic-bezier(0.2,0.8,0.2,1) backwards; }
+.skills-grid.in-view .skill-card:nth-child(2),
+.case-grid.in-view .mini-case:nth-child(2) { animation-delay: 0.1s; }
+.skills-grid.in-view .skill-card:nth-child(3),
+.case-grid.in-view .mini-case:nth-child(3) { animation-delay: 0.2s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-content, .skill-logo, .skill-card, .mini-case { animation: none !important; }
+  .skill-marquee-track { animation: none !important; }
+  .skill-marquee { overflow-x: auto; }
+  .btn-primary::after { animation: none; }
 }

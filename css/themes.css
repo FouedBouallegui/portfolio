@@ -10,7 +10,7 @@
   --radius-sm: 10px;
 
   /* spacing scale */
-  --space-section: clamp(5rem, 10vw, 9rem);
+  --space-section: clamp(3rem, 6vw, 5rem);
 
   --accent: #14b8a6;
   --accent-soft: rgba(20, 184, 166, 0.12);

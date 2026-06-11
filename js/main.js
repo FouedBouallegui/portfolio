@@ -84,4 +84,14 @@
       if (e.key === "Escape" && !modal.hidden) closeModal();
     });
   }
+
+  // Skills marquee — duplicate logos for a seamless infinite loop (-50%)
+  var marqueeTrack = document.querySelector(".skill-marquee-track");
+  if (marqueeTrack) {
+    marqueeTrack.querySelectorAll(".skill-logo").forEach(function (logo) {
+      var dup = logo.cloneNode(true);
+      dup.setAttribute("aria-hidden", "true");
+      marqueeTrack.appendChild(dup);
+    });
+  }
 })();

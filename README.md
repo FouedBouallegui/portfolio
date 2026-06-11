@@ -1,5 +1,7 @@
 # Foued Bouallegui — Developer Portfolio
 
+> Last synced: June 2026 | Skills logo wall & Essid real-image added.
+
 A premium, responsive, multilingual portfolio for a Full-Stack JavaScript Developer.
 Built as a fast, dependency-free static site — deployable directly to **GitHub Pages**.
 

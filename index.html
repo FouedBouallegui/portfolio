@@ -60,7 +60,7 @@
     <div class="container nav-inner">
       <a href="#hero" class="brand" aria-label="Foued Bouallegui — home">
         <span class="brand-dot" aria-hidden="true"></span>
-        <span class="mono">Foued Bouallegui</span>
+        <span class="mono">F. Bouallegui</span>
       </a>
 
       <nav class="nav-links" aria-label="Primary">
@@ -110,17 +110,20 @@
           <h1 class="hero-title">Foued Bouallegui</h1>
           <p class="hero-role mono" data-i18n="hero.role">Full-Stack JavaScript Developer</p>
           <p class="hero-lead" data-i18n="hero.lead">
-            I build, deploy, and maintain production-grade web platforms — specializing in robust
-            architecture, secure authentication, and high-performance React &amp; Node.js systems.
+             I engineer production-grade web platforms with a strong backend foundation — scalable
+             Node.js / Express APIs, secure authentication systems, complex database architecture,
+             and end-to-end encryption. I also build polished frontends with Angular and React.
           </p>
           <div class="hero-cta">
             <a href="#projects" class="btn btn-primary" data-i18n="hero.ctaProjects">View Projects</a>
             <a href="#contact" class="btn btn-ghost"><span class="mono cta-num">01</span> <span data-i18n="hero.ctaContact">Get in touch</span></a>
           </div>
           <dl class="hero-stats">
-            <div><dt class="mono" data-i18n="hero.stat1Label">Experience</dt><dd data-i18n="hero.stat1">2+ years</dd></div>
-            <div><dt class="mono" data-i18n="hero.stat2Label">Projects</dt><dd data-i18n="hero.stat2">6+ shipped</dd></div>
-            <div><dt class="mono" data-i18n="hero.stat3Label">Stack</dt><dd>JavaScript / TypeScript</dd></div>
+               <div><dt class="mono" data-i18n="hero.stat1Label">Experience</dt><dd data-i18n="hero.stat1">2+ years</dd></div>
+               <div><dt class="mono" data-i18n="hero.stat2Label">Projects</dt><dd data-i18n="hero.stat2">6+ shipped</dd></div>
+               <div><dt class="mono" data-i18n="hero.stat3Label">Front-End</dt><dd data-i18n="hero.stat3">Angular · React · React Native</dd></div>
+               <div><dt class="mono" data-i18n="hero.stat4Label">Back-End</dt><dd data-i18n="hero.stat4">Node.js · Express · SQL</dd></div>
+               <div><dt class="mono" data-i18n="hero.stat5Label">Focus</dt><dd data-i18n="hero.stat5">Backend &amp; Architecture</dd></div>
           </dl>
         </div>
       </div>
@@ -142,7 +145,7 @@
           <p class="about-text reveal" data-i18n="about.p2">
             I care about clean architecture, performance, and security. I work comfortably across the
             stack — from responsive interfaces in React and Angular to scalable Node.js / Express APIs and
-            relational or document databases — while pursuing my Business Intelligence degree at ISG Sousse.
+            relational or document databases — while pursuing my Computer Science degree at ISG Sousse.
           </p>
         </div>
       </div>
@@ -191,8 +194,7 @@
             <div class="case-body">
               <div class="case-tags">
                 <span class="tag tag-accent">E-Commerce</span>
-                <span class="tag">Angular</span>
-                <span class="tag">Node.js</span>
+                <span class="tag">React</span>
                 <span class="tag">Express</span>
                 <span class="tag">SQL</span>
               </div>
@@ -212,7 +214,7 @@
           </article>
 
           <!-- Smaller projects grid -->
-          <div class="case-grid">
+          <div class="case-grid reveal">
             <article class="mini-case reveal">
               <span class="mono mini-tag">Inventory</span>
               <h4>Sanimed — QR Scan Module</h4>
@@ -243,33 +245,36 @@
           <span class="mono section-kicker" data-i18n="skills.kicker">03 — Stack</span>
           <h2 class="section-title" data-i18n="skills.title">Tools &amp; technologies</h2>
         </div>
-        <div class="skills-grid">
-          <div class="skill-card reveal">
-            <h3 class="mono skill-head" data-i18n="skills.frontend">Front-End</h3>
-            <ul class="skill-list">
-              <li><span>React &amp; Redux Toolkit</span><em class="mono">Expert</em></li>
-              <li><span>Angular</span><em class="mono">Advanced</em></li>
-              <li><span>Tailwind CSS / Bootstrap</span><em class="mono">Expert</em></li>
-              <li><span>React Native</span><em class="mono">Advanced</em></li>
-            </ul>
-          </div>
-          <div class="skill-card reveal">
-            <h3 class="mono skill-head" data-i18n="skills.backend">Back-End</h3>
-            <ul class="skill-list">
-              <li><span>Node.js &amp; Express.js</span><em class="mono">Core</em></li>
-              <li><span>MySQL / PostgreSQL</span><em class="mono">Core</em></li>
-              <li><span>MongoDB / Mongoose</span><em class="mono">Core</em></li>
-              <li><span>Prisma / Sequelize</span><em class="mono">Core</em></li>
-            </ul>
-          </div>
-          <div class="skill-card reveal">
-            <h3 class="mono skill-head" data-i18n="skills.tools">Tooling &amp; Practices</h3>
-            <ul class="skill-list">
-              <li><span>Git / GitHub</span><em class="mono">Core</em></li>
-              <li><span>REST APIs / JWT Auth</span><em class="mono">Core</em></li>
-              <li><span>Agile / Scrum</span><em class="mono">Core</em></li>
-              <li><span>TypeScript</span><em class="mono">Advanced</em></li>
-            </ul>
+        <!-- Skills logo wall — single-line auto-scroll marquee -->
+        <h3 class="mono skill-logos-title reveal" data-i18n="skills.logosTitle">Technologies I work with</h3>
+        <div class="skill-marquee reveal" role="list" aria-label="Technology logos">
+          <div class="skill-marquee-track">
+            <div class="skill-logo" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" loading="lazy" width="64" height="64" /><span class="mono">JavaScript</span></div>
+            <div class="skill-logo" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" loading="lazy" width="64" height="64" /><span class="mono">TypeScript</span></div>
+            <div class="skill-logo" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" loading="lazy" width="64" height="64" /><span class="mono">React</span></div>
+            <div class="skill-logo" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native" loading="lazy" width="64" height="64" /><span class="mono">React Native</span></div>
+            <div class="skill-logo" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" alt="Redux" loading="lazy" width="64" height="64" /><span class="mono">Redux</span></div>
+            <div class="skill-logo" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" loading="lazy" width="64" height="64" /><span class="mono">Angular</span></div>
+            <div class="skill-logo" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" loading="lazy" width="64" height="64" /><span class="mono">Node.js</span></div>
+            <div class="skill-logo" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" loading="lazy" width="64" height="64" /><span class="mono">Python</span></div>
+            <div class="skill-logo" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" loading="lazy" width="64" height="64" /><span class="mono">Spring Boot</span></div>
+            <div class="skill-logo" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" loading="lazy" width="64" height="64" /><span class="mono">Express</span></div>
+            <div class="skill-logo" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" loading="lazy" width="64" height="64" /><span class="mono">MongoDB</span></div>
+            <div class="skill-logo" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" loading="lazy" width="64" height="64" /><span class="mono">MySQL</span></div>
+            <div class="skill-logo" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" loading="lazy" width="64" height="64" /><span class="mono">SQLite</span></div>
+            <div class="skill-logo" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" loading="lazy" width="64" height="64" /><span class="mono">PostgreSQL</span></div>
+            <div class="skill-logo" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg" alt="Prisma" loading="lazy" width="64" height="64" /><span class="mono">Prisma</span></div>
+            <div class="skill-logo" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg" alt="Sequelize" loading="lazy" width="64" height="64" /><span class="mono">Sequelize</span></div>
+            <div class="skill-logo" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongoose/mongoose-original.svg" alt="Mongoose" loading="lazy" width="64" height="64" /><span class="mono">Mongoose</span></div>
+            <div class="skill-logo" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" loading="lazy" width="64" height="64" /><span class="mono">Tailwind</span></div>
+            <div class="skill-logo" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" loading="lazy" width="64" height="64" /><span class="mono">Bootstrap</span></div>
+            <div class="skill-logo" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" loading="lazy" width="64" height="64" /><span class="mono">HTML5</span></div>
+            <div class="skill-logo" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" loading="lazy" width="64" height="64" /><span class="mono">CSS3</span></div>
+            <div class="skill-logo" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" loading="lazy" width="64" height="64" /><span class="mono">Git</span></div>
+            <div class="skill-logo" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" loading="lazy" width="64" height="64" /><span class="mono">GitHub</span></div>
+            <div class="skill-logo" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="GitLab" loading="lazy" width="64" height="64" /><span class="mono">GitLab</span></div>
+            <div class="skill-logo" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" loading="lazy" width="64" height="64" /><span class="mono">Figma</span></div>
+            <div class="skill-logo" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" alt="Trello" loading="lazy" width="64" height="64" /><span class="mono">Trello</span></div>
           </div>
         </div>
       </div>
@@ -325,12 +330,12 @@
           <ol class="timeline">
             <li class="t-item">
               <span class="mono t-date">ISG Sousse · 2021–2023, 2025–2026</span>
-              <h3 data-i18n="education.e1.title">Business Intelligence (Final Year)</h3>
+              <h3 data-i18n="education.e1.title">Computer Science (Final Year)</h3>
               <p data-i18n="education.e1.desc">Resumed studies while working full-time; advanced to the final year.</p>
             </li>
             <li class="t-item">
               <span class="mono t-date">2021</span>
-              <h3 data-i18n="education.e2.title">Baccalaureate in Business Intelligence</h3>
+              <h3 data-i18n="education.e2.title">Baccalaureate in Computer Science</h3>
             </li>
           </ol>
           <h2 class="mono col-title col-title-spaced" data-i18n="languages.title">Languages</h2>
